@@ -162,11 +162,12 @@ const Index = () => {
             </div>
             
             <div className="relative">
-              <div className="bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl p-8 h-96 flex items-center justify-center">
-                <div className="text-center text-primary">
-                  <Icon name="HardHat" size={120} className="mx-auto mb-4 opacity-20" fallback="Shield" />
-                  <p className="text-lg font-semibold">Безопасность превыше всего</p>
-                </div>
+              <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-4 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/files/21bda1c7-df3a-4c35-b735-734af00e8d6b.png" 
+                  alt="Профессиональное буровое оборудование NOVATEQ Group"
+                  className="w-full h-auto rounded-lg shadow-lg"
+                />
               </div>
             </div>
           </div>
@@ -187,8 +188,12 @@ const Index = () => {
             {projects.map((project, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow duration-300 animate-fade-in">
                 <CardHeader>
-                  <div className="w-full h-48 bg-gradient-to-br from-primary/20 to-primary/5 rounded-lg mb-4 flex items-center justify-center">
-                    <Icon name="Monitor" size={64} className="text-primary opacity-50" />
+                  <div className="w-full h-48 bg-gradient-to-br from-primary/20 to-primary/5 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/img/5b1762ec-469d-4148-8b73-8d1166673092.jpg" 
+                      alt={project.title}
+                      className="w-full h-full object-cover rounded-lg opacity-80"
+                    />
                   </div>
                   <CardTitle className="text-xl">{project.title}</CardTitle>
                 </CardHeader>
