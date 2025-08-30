@@ -6,42 +6,42 @@ import Icon from '@/components/ui/icon';
 const Index = () => {
   const services = [
     {
-      icon: 'Code',
-      title: 'Веб-разработка',
-      description: 'Создание современных веб-приложений на передовых технологиях'
-    },
-    {
-      icon: 'Smartphone',
-      title: 'Мобильные приложения',
-      description: 'Разработка нативных и кроссплатформенных мобильных решений'
+      icon: 'Wrench',
+      title: 'Спуск обсадных колонн',
+      description: 'Профессиональные услуги по спуску обсадных колонн с использованием современного оборудования'
     },
     {
       icon: 'Settings',
-      title: 'IT-консалтинг',
-      description: 'Экспертная поддержка в вопросах цифровой трансформации'
+      title: 'Спуск НКТ',
+      description: 'Качественный спуск насосно-компрессорных труб с соблюдением всех технологических требований'
     },
     {
-      icon: 'Database',
-      title: 'Системная интеграция',
-      description: 'Интеграция корпоративных систем и автоматизация процессов'
+      icon: 'Shield',
+      title: 'Контроль качества',
+      description: 'Строгий контроль качества выполняемых работ и соблюдение промышленной безопасности'
+    },
+    {
+      icon: 'Users',
+      title: 'Опытная команда',
+      description: 'Высококвалифицированные специалисты с многолетним опытом в нефтегазовой отрасли'
     }
   ];
 
   const projects = [
     {
-      title: 'E-commerce платформа',
-      description: 'Полнофункциональная система интернет-торговли с интеграцией платежных систем',
-      tech: ['React', 'Node.js', 'PostgreSQL']
+      title: 'Месторождение "Северное"',
+      description: 'Спуск обсадных колонн диаметром 324мм на глубину 2800м с применением централизаторов',
+      details: ['Глубина: 2800м', 'Диаметр: 324мм', 'Срок: 5 дней']
     },
     {
-      title: 'CRM система',
-      description: 'Система управления взаимоотношениями с клиентами для среднего бизнеса',
-      tech: ['Vue.js', 'Express', 'MongoDB']
+      title: 'Скважина №47',
+      description: 'Спуск НКТ с установкой пакера и глубинного насоса на Западно-Сибирском месторождении',
+      details: ['НКТ: 73мм', 'Глубина: 1950м', 'Оборудование: ЭЦН']
     },
     {
-      title: 'Мобильное приложение',
-      description: 'Кроссплатформенное приложение для управления задачами и проектами',
-      tech: ['React Native', 'Firebase', 'Redux']
+      title: 'Ремонт скважины',
+      description: 'Капремонт с заменой обсадной колонны и восстановлением герметичности ствола',
+      details: ['Тип работ: КРС', 'Замена: 219мм', 'Результат: +40% дебит']
     }
   ];
 
@@ -73,12 +73,12 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="text-center animate-fade-in">
             <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-              IT-решения для
-              <span className="text-primary block mt-2">вашего бизнеса</span>
+              Услуги спуска
+              <span className="text-primary block mt-2">обсадных колонн и НКТ</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Разрабатываем современные программные решения, которые помогают 
-              компаниям достигать новых высот в цифровом мире
+              Профессиональные сервисы для нефтегазовой отрасли с применением 
+              современных технологий и строгим соблюдением стандартов безопасности
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg px-8 py-4">
@@ -100,7 +100,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-4">Наши услуги</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Предоставляем полный спектр IT-услуг для успешного развития вашего бизнеса
+              Комплексные решения для нефтегазовых компаний с гарантией качества и безопасности
             </p>
           </div>
           
@@ -131,27 +131,27 @@ const Index = () => {
             <div className="animate-slide-in">
               <h2 className="text-4xl font-bold text-foreground mb-6">О компании</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                NOVATEQ Group — ведущая IT-компания, специализирующаяся на разработке 
-                инновационных программных решений. Мы помогаем бизнесу автоматизировать 
-                процессы и повышать эффективность с помощью современных технологий.
+                NOVATEQ Group — специализированная сервисная компания, предоставляющая услуги 
+                по спуску обсадных колонн и НКТ в нефтегазовой отрасли. Мы обеспечиваем высокое 
+                качество работ и строго соблюдаем требования промышленной безопасности.
               </p>
               
               <div className="grid grid-cols-2 gap-6 mb-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">50+</div>
-                  <div className="text-muted-foreground">Проектов</div>
+                  <div className="text-3xl font-bold text-primary mb-2">150+</div>
+                  <div className="text-muted-foreground">Скважин</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">5+</div>
+                  <div className="text-3xl font-bold text-primary mb-2">12+</div>
                   <div className="text-muted-foreground">Лет опыта</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">20+</div>
+                  <div className="text-3xl font-bold text-primary mb-2">25+</div>
                   <div className="text-muted-foreground">Специалистов</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">98%</div>
-                  <div className="text-muted-foreground">Довольных клиентов</div>
+                  <div className="text-3xl font-bold text-primary mb-2">99.5%</div>
+                  <div className="text-muted-foreground">Успешных работ</div>
                 </div>
               </div>
               
@@ -164,8 +164,8 @@ const Index = () => {
             <div className="relative">
               <div className="bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl p-8 h-96 flex items-center justify-center">
                 <div className="text-center text-primary">
-                  <Icon name="Users" size={120} className="mx-auto mb-4 opacity-20" />
-                  <p className="text-lg font-semibold">Команда экспертов</p>
+                  <Icon name="HardHat" size={120} className="mx-auto mb-4 opacity-20" fallback="Shield" />
+                  <p className="text-lg font-semibold">Безопасность превыше всего</p>
                 </div>
               </div>
             </div>
@@ -179,7 +179,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-4">Наши проекты</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Примеры успешно реализованных решений для различных отраслей
+              Примеры успешно выполненных работ на различных месторождениях
             </p>
           </div>
           
@@ -197,12 +197,12 @@ const Index = () => {
                     {project.description}
                   </CardDescription>
                   <div className="flex flex-wrap gap-2">
-                    {project.tech.map((tech, techIndex) => (
+                    {project.details.map((detail, detailIndex) => (
                       <span 
-                        key={techIndex}
+                        key={detailIndex}
                         className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm"
                       >
-                        {tech}
+                        {detail}
                       </span>
                     ))}
                   </div>
@@ -271,17 +271,17 @@ const Index = () => {
             <div>
               <h3 className="text-2xl font-bold mb-4">NOVATEQ</h3>
               <p className="text-primary-foreground/80 mb-4">
-                Инновационные IT-решения для современного бизнеса
+                Профессиональные сервисы для нефтегазовой отрасли
               </p>
             </div>
             
             <div>
               <h4 className="font-semibold mb-4">Услуги</h4>
               <ul className="space-y-2 text-primary-foreground/80">
-                <li>Веб-разработка</li>
-                <li>Мобильные приложения</li>
-                <li>IT-консалтинг</li>
-                <li>Системная интеграция</li>
+                <li>Спуск обсадных колонн</li>
+                <li>Спуск НКТ</li>
+                <li>Контроль качества</li>
+                <li>Техническое сопровождение</li>
               </ul>
             </div>
             
